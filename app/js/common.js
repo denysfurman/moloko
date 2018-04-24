@@ -1,7 +1,9 @@
 
 
-    //  mobile menu
+
     jQuery(document).ready(function($){
+
+        //  mobile menu
         var $lateral_menu_trigger = $('#cd-menu-trigger'),
             $content_wrapper = $('.cd-main-content'),
             $navigation = $('header');
@@ -42,7 +44,7 @@
             $(target).show();
 
         })
-
+        //search
         function expand() {
             $(".search").toggleClass("close");
             $(".input").toggleClass("square");
@@ -53,6 +55,38 @@
             }
         }
         $('button').on('click', expand);
+        //chart js
+        var lineChartData = {
+            labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
+            datasets: [{
+                fillColor: "transparent",
+                strokeColor: "#4c5a6c",
+                pointColor:"#4c5a6c",
+                data: [2, 4, 1, 8,4,6]
+            }]
+
+        }
+
+        Chart.defaults.global.animationSteps = 50;
+        Chart.defaults.global.tooltipYPadding = 16;
+        Chart.defaults.global.tooltipCornerRadius = 0;
+        Chart.defaults.global.tooltipTitleFontStyle = "normal";
+        Chart.defaults.global.tooltipFillColor = "#000";
+        Chart.defaults.global.animationEasing = "easeOutBounce";
+        Chart.defaults.global.responsive = true;
+        Chart.defaults.global.scaleLineColor = "black";
+        Chart.defaults.global.scaleFontSize = 16;
+
+        var ctx = document.getElementById("canvas").getContext("2d");
+        var LineChartDemo = new Chart(ctx).Line(lineChartData, {
+            pointDotRadius: 10,
+            bezierCurve: false,
+            scaleShowVerticalLines: false,
+            scaleGridLineColor: "black"
+        });
+
+
+
 
     });
 
