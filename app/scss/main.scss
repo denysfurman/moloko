@@ -11,6 +11,7 @@
 	color: #fff;
 }
 
+
 html, body {
 	height: 100%;
 }
@@ -46,7 +47,28 @@ body {
 	max-width: 100%;
 	height: auto;
 }
+a {
+	text-decoration: none;
 
+	transition: all 0.2s ease;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	outline: none !important;
+	cursor: pointer;
+	&:hover, &:active, &:focus {
+		text-decoration: none;
+
+		transition: all 0.3s ease;
+		outline: none;
+		border: none;
+	}
+}
+
+button{
+	outline: none!important;
+}
 .text-center {
 	text-align: center;
 }
@@ -66,17 +88,51 @@ ul{
 }
 .main_content{
 	width: calc(100% - 327px);
+	padding-left: 60px;
+	padding-top: 20px;
 
 }
 
 // --------------- all
 .main_sitebar{
-	width: 327px;
-	height: 100vh;
-	box-shadow: 5px 0 20px rgba(18, 24, 37, 0.34);
-	background-color: #333c4c;
+
 	padding-left: 70px;
 	padding-top: 70px;
 }
+
+.tabs {
+	li {
+		float:left;
+		margin-right: 50px;
+	}
+	a {
+		display:block;
+		color: #41c3fb;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+
+		color: #ffffff;
+
+
+
+		&:hover, &.active {
+			border-bottom: 1px solid #fff;
+		}
+	}
+}
+.tabgroup {
+	div {
+		margin-top: 20px;
+
+	}
+}
+.clearfix:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
 @import "menu";
 @import "media"; // Always at the end
