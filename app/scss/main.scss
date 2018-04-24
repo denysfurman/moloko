@@ -24,10 +24,11 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
-	font-family: $default-font;
+	
 	overflow-x: hidden;
 	background-color: #272d3b;
 	font-family: 'Roboto', sans-serif;
+	color: #fff;
 	input, textarea {
 			border: #666 1px solid;
 			outline: none;
@@ -49,5 +50,33 @@ body {
 .text-center {
 	text-align: center;
 }
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li{
+		list-style: none;
+	}
+}
+.page{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
+}
+.main_content{
+	width: calc(100% - 327px);
 
+}
+
+// --------------- all
+.main_sitebar{
+	width: 327px;
+	height: 100vh;
+	box-shadow: 5px 0 20px rgba(18, 24, 37, 0.34);
+	background-color: #333c4c;
+	padding-left: 70px;
+	padding-top: 70px;
+}
+@import "menu";
 @import "media"; // Always at the end
