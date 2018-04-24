@@ -58,43 +58,7 @@
 
 
 
-        //chart js
-        var lineChartData = {
-            labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
 
-            datasets: [{
-                fillColor: "transparent",
-                strokeColor: "#4c5a6c",
-                pointColor:"#4c5a6c",
-                fontColor: "white",
-
-
-
-                data: [2, 4, 1, 8,4,6]
-            }]
-        }
-
-        Chart.defaults.global.animationSteps = 50;
-
-        Chart.defaults.global.tooltipYPadding = 10;
-        Chart.defaults.global.tooltipCornerRadius = 3;
-        Chart.defaults.global.tooltipTitleFontStyle = "normal";
-        Chart.defaults.global.tooltipTitleFontColor = "#FFFFFF";
-        Chart.defaults.global.tooltipFillColor = "#000";
-        Chart.defaults.global.animationEasing = "easeOutBounce";
-        Chart.defaults.global.responsive = true;
-        Chart.defaults.global.scaleLineColor = "#333c4c";
-        Chart.defaults.global.scaleFontSize = 14;
-        Chart.defaults.global.defaultFontColor	 = "white";
-        var ctx = document.getElementById("canvas").getContext("2d");
-        var LineChartDemo = new Chart(ctx).Line(lineChartData, {
-            pointDotRadius: 3,
-            bezierCurve: false,
-            scaleShowVerticalLines: false,
-            scaleGridLineColor: "#333c4c",
-            defaultFontColor: "white"
-
-        });
 
 
 
