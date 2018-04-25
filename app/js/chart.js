@@ -41,7 +41,7 @@ var lineChartData2 = {
         strokeColor: "#4c5a6c",
         pointColor:"#4c5a6c",
         fontColor: "white",
-        data: [4, 3, 5, 8,4,6]
+        data: [ 2.55,2.70, 2.50,2.85, 2.50,2.80]
     }]
 }
 
@@ -57,52 +57,4 @@ var LineChartDemo2 = new Chart(ctx2).Line(lineChartData2, {
 
 
 
-
-// var ctx = document.getElementById("myLine").getContext('2d');
-//
-// var chart = new Chart(ctx, {
-//     // The type of chart we want to create
-//     type: 'line',
-//
-//
-//     // The data for our dataset
-//     data: {
-//         labels: ["January", "February", "March", "April", "May", "June", "July"],
-//         datasets: [{
-//
-//             backgroundColor: '#fff',
-//             borderColor: 'rgb(255, 99, 132)',
-//             data: [0, 10, 5, 2, 20, 10, 45],
-//         }]
-//     },
-//
-//     // Configuration options go here
-//     options: {
-//         bezierCurve: false
-//     }
-// });
-//
-// var ctx = document.getElementById("myFirst").getContext('2d');
-//
-// var chart2 = new Chart(ctx, {
-//     // The type of chart we want to create
-//     type: 'line',
-//
-//     // The data for our dataset
-//     data: {
-//         labels: ["January", "February", "March", "April", "May", "June", "July"],
-//         datasets: [{
-//
-//             backgroundColor: 'rgb(0,40,99,0)',
-//             borderColor: 'rgb(255, 99, 132)',
-//             bezierCurve: false,
-//             data: [0, 10, 5, 2, 20, 10, 45],
-//
-//         }]
-//     },
-//
-//     // Configuration options go here
-//     options: {}
-// });
-//
 

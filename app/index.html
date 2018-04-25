@@ -27,7 +27,7 @@
 
 </head>
 <body>
-<div class="page">
+
     <!--<a id="cd-menu-trigger" href="#0"><i>MЕНЮ</i><span class="cd-menu-icon"></span></a>-->
     <div class="main_sitebar" id="cd-lateral-nav">
         <a href="#" class="logo">
@@ -43,11 +43,18 @@
     
             <div class="main_menu_mob_wr">
                 <ul class="cd-navigation">
-                    <li><a href="#" class="active"><span>Все фермы</span></a></li>
-                    <li><a href="#"><span>с. Архангельское</span></a></li>
-                    <li><a href="#"><span>с. Новомарковка</span></a></li>
-                    <li><a href="#"><span>с. Николаевка</span></a></li>
-                    <li><a href="#"><span>Избранное</span></a></li>
+                    <li><a href="#" class="active"><i class="icon-icon-09"></i><span>Все фермы</span></a></li>
+                    <li><a href="#"><i class="icon-icon-07"></i><span> с. Архангельское</span></a></li>
+                    <li><a href="#"><i class="icon-icon-07"></i><span>с. Новомарковка</span></a></li>
+                    <li><a href="#"><i class="icon-icon-07"></i><span>с. Николаевка</span></a></li>
+                    <li><a href="#"><i class="icon-icon-08"></i><span>Избранное</span></a></li>
+                    <li class="lk_link">
+    
+                        <a href="#">
+                            <i></i>
+                            <span>bossco_mil</span>
+                        </a>
+                    </li>
                 </ul>
     
             </div>
@@ -55,11 +62,21 @@
     
     
     </div>
-    <div class="main_content">
+<div class="main_content">
+    <div class="main_content_wr">
         <form id="content">
             <input type="text" name="input" class="input">
             <button type="reset" class="search"></button>
         </form>
+
+        <div class="main_content_descr">
+            <span>Молочная ферма</span>
+            <h1>с. Новомарковка</h1>
+        </div>
+
+
+
+
 
 
         <ul class="tabs clearfix" data-tabgroup="first-tab-group">
@@ -72,15 +89,26 @@
         </ul>
         <section id="first-tab-group" class="tabgroup">
             <div id="tab1">
-                <h2>Chart.js Responsive Line Chart Demo</h2>
+
                 <div class="chart_wr">
-                    <canvas id="canvas" width="400" height="200"></canvas>
+                    <span class="chart_title">Сбои/доильный аппарат</span>
+                    <div class="canvas_wr">
+                        <canvas id="canvas"></canvas>
+                    </div>
+
                 </div>
 
                 <div class="chart_wr">
-                    <canvas id="myLine"></canvas>
+                    <span class="chart_title">Скорость доения</span>
+                    <div class="canvas_wr">
+                        <canvas id="myLine"></canvas>
+                    </div>
                 </div>
+
             </div>
+
+
+
             <div id="tab2">
                 <h2>Heading 2</h2>
                 <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.</p>
@@ -100,7 +128,7 @@
         </section>
 
     </div>
-</div>
+
 
 
 <script src="js/scripts.min.js"></script>

@@ -7,7 +7,7 @@
 }
 
 ::selection {
-	background-color: $accent;
+	background-color: #00b3ee;
 	color: #fff;
 }
 
@@ -90,43 +90,48 @@ ul{
 	padding-right: 70px;
 
 }
-.chart_wr{
-	width: 500px;
-	margin-bottom: 40px;
-}
+
 
 // --------------- all
 .main_sitebar{
 
-	padding-left: 70px;
+	padding-left: 60px;
 	padding-top: 70px;
 }
 
 .tabs {
+
+	display: flex;
+
 	li {
 		float:left;
 		margin-right: 50px;
+		&:last-child{
+			margin-right: 0;
+		}
+
 	}
 	a {
 		display:block;
 
 		font-family: Roboto;
-		font-size: 16px;
-		font-weight: 300;
+		font-size: 18px;
+		font-weight: 200;
 		line-height: 30px;
 
-		color: #ffffff;
+		color: #96a1b0;
 
 
 
 		&:hover, &.active {
 			border-bottom: 1px solid #fff;
+			color: #fff;
 		}
 	}
 }
 .tabgroup {
-	div {
-		margin-top: 20px;
+	>div {
+		margin-top: 30px;
 
 	}
 }
@@ -264,11 +269,84 @@ input {
 	transform: translate(-4%,-50%);
 }
 .logo{
-	 font-size: 108px;
+	font-size: 120px;
+	margin-left: 68px;
 	span{
 		display: inline-flex;
 	}
 
- }
+}
+.main_content_wr {
+	width: 100%;
+
+}
+.main_content_descr{
+	span{
+		color: #424b5a;
+		font-size: 16px;
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		top: -15px;
+		font-weight: 300;
+	}
+	h1{
+		color: #fff;
+		font-weight: 200;
+		font-size: 48px;
+		margin-top: 0;
+		margin-bottom: 45px;
+		line-height: 22px;
+	}
+}
+.chart_wr{
+
+
+	margin-bottom: 40px;
+	.chart_title{
+		display: block;
+      	width: 100%;
+		color: #96a1b0;
+		font-size: 16px;
+		font-weight: 300;
+		background-color: #222835;
+		padding: 5px 10px;
+		margin-bottom: 20px;
+	}
+	.canvas_wr{
+		width: 750px;
+		padding: 15px;
+		background-color: #2b3240;
+		display: inline-block;
+		canvas{
+			width: 710px!important;
+			height: 200px!important;
+		}
+	}
+}
+
+.lk_link a i{
+	background-image: url(../img/svg/icon-12.svg);
+	width: 30px;
+	height: 30px;
+	background-size: 30px;
+	display: inline-block;
+	top: 10px!important;
+	background-repeat: no-repeat;
+
+}
+#cd-lateral-nav .main_menu_mob_wr .lk_link{
+	margin-top: 150px;
+	a {
+		margin-top: -10px;
+		display: block;
+		line-height: 50px;
+	}
+}
+.lk_link a:hover{
+	i{
+		background-image: url(../img/svg/icon-11.svg);
+	}
+}
 @import "menu";
 @import "media"; // Always at the end
