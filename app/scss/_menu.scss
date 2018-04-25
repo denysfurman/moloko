@@ -156,7 +156,9 @@
 
 #cd-lateral-nav {
 
-
+  position: fixed;
+  left: 0;
+  top: 0;
 
   visibility: visible;
   z-index: 12;
