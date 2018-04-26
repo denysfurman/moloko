@@ -48,6 +48,7 @@
         function expand() {
             $(".search").toggleClass("close");
             $(".input").toggleClass("square");
+            $("#content").toggleClass("active");
             if ($('.search').hasClass('close')) {
                 $('input').focus();
             } else {

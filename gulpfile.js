@@ -18,10 +18,10 @@ gulp.task('browser-sync', function() {
 		server: {
 			baseDir: 'app'
 		},
-		notify: false,
+		notify: false
 		// open: false,
-		tunnel: true,
-		tunnel: "moloko", //Demonstration page: http://projectname.localtunnel.me
+		// tunnel: true,
+		// tunnel: "moloko", //Demonstration page: http://projectname.localtunnel.me
 	})
 });
 

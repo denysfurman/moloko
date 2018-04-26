@@ -11,14 +11,15 @@
  Chart.defaults.global.responsive = true;
  Chart.defaults.global.scaleLineColor = "#333c4c";
  Chart.defaults.global.scaleFontSize = 16;
- var lineChartData = {
+
+var lineChartData = {
      labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
 
      datasets: [{
          fillColor: "transparent",
          strokeColor: "#4c5a6c",
          pointColor:"#4c5a6c",
-         fontColor: "white",
+         fontColor: "#ffffff",
          data: [2, 4, 1, 8,4,6]
      }]
  }
@@ -35,6 +36,14 @@
 
 var lineChartData2 = {
     labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
+    options: {
+        legend: {
+            labels: {
+                // This more specific font property overrides the global property
+                fontColor: '#fff'
+            }
+        }
+    },
 
     datasets: [{
         fillColor: "transparent",
