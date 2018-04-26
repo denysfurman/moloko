@@ -3,56 +3,117 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width: 1910px) {
+  .chart_wr .canvas_wr {
+    width: 636px;
+  }
+  .chart_wr .canvas_wr canvas {
+    width: 580px!important;
+  }
+}
 
-//Extra large: ≥1200px
-@include media-breakpoint-down(xl) {
+@media only screen and (max-width: 1200px) {
+  #cd-lateral-nav {
+    visibility: hidden;
+    transform: translateX(-400px);
+  }
+  .main_content {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  #cd-menu-trigger{
+    display: block;
+  }
+  #cd-lateral-nav .main_menu_mob_wr .lk_link {
+    margin-top: 50px;
+  }
+  .main_sitebar {
+    padding-left: 0px;
+    padding-top: 80px;
+  }
+  .logo {
+    font-size: 90px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: -52px;
+  }
+  #cd-lateral-nav {
+
+    width: 280px;
+  }
+  #content input{
+    border: #fff 2px solid;
+    outline: 0;
+  }
+  #content .search:before {
+
+    background-color: #fff;
+  }
+  #content {
+    position: relative;
+    height: 50px;
+    width: calc(100% - 104px);
+    float: left;
+  }
+  #content input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+  }
+  .chart_wr .canvas_wr {
+    width: 100%;
+    padding: 15px;
+  }
+  .chart_wr .canvas_wr canvas {
+    width: 100%!important;
+    height: 200px!important;
+  }
+  #content .search:before {
+    width: 10px;
+    height: 2px;
+    margin-top: 13px;
+    margin-left: 4px;
+
+  }
+  #content .search.close:before {
+    width: 10px;
+    height: 2px;
+    margin-top: 13px;
+    margin-left: 4px;
+
+  }
+  #content .search.close:before {
+    width: 27px;
+    height: 1px;
+    margin-top: 0px;
+    margin-left: -13px;
+
+  }
+  .logo_mob {
+    display: block;
+    position: relative;
+    width: 76px;
+    margin-top: 15px;
+    margin-left: 13px;
+    float: left;
+   
+  }
+
+  .main_content_descr span {
+
+    top: 0;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+  body.shadow:before {
+
+    background-color: rgb(22, 31, 47);
+    z-index: 11;
+  }
 
 }
 
-//Large: ≥992px
-@include media-breakpoint-down(lg) {
-
-}
-
-//Medium: ≥768px
-@include media-breakpoint-down(md) {
-
-}
-
-//Small: ≥576px
-@include media-breakpoint-down(sm) {
-
-}
-
-//Extra small: >0
-@include media-breakpoint-down(xs) {
-
-}
-
-
-/*==========  Mobile First  ==========*/
-
-//Extra small: <576px
-@include media-breakpoint-up(xs) {
-
-}
-
-//Small: ≤576px
-@include media-breakpoint-up(sm) {
-
-}
-
-//Medium: ≤768px
-@include media-breakpoint-up(md) {
-
-}
-
-//Large: ≤992px
-@include media-breakpoint-up(lg) {
-
-}
-
-//Extra large: ≤1200px
-@include media-breakpoint-up(xl) {
-
-}
