@@ -178,7 +178,7 @@ ul{
 		transition: width 0.3s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
 		-webkit-transition-delay: 0.1s;
 		transition-delay: 0.1s;
-		transform: translate(-29px,-50%);
+		transform: translate(-17px,-50%);
 		float: right;
 	}
 
@@ -197,9 +197,8 @@ ul{
 		cursor: pointer;
 		-webkit-transition: 0.2s ease-in-out;
 		transition: 0.2s ease-in-out;
-		-webkit-transform: translate(-100%, -50%);
-		-ms-transform: translate(-100%, -50%);
-		transform: translate(-100%, -50%);
+
+		transform: translate(-36px,-50%);
 	}
 
 	.search:before {
@@ -267,7 +266,7 @@ ul{
 		font-weight: 400;
 		outline: 0;
 
-		transform: translate(-4%,-50%);
+		transform: translate(0%,-50%);
 	}
 }
 .logo{
@@ -283,7 +282,7 @@ ul{
 
 }
 .main_content_descr{
-	span{
+	>span{
 		color: #424b5a;
 		font-size: 16px;
 		display: inline-block;
@@ -346,6 +345,7 @@ ul{
 		margin-top: -10px;
 		display: block;
 		line-height: 50px;
+		padding: 0 20px;
 	}
 }
 .lk_link a:hover{
@@ -390,6 +390,7 @@ ul{
 .login_page{
 	width: 100%;
 	min-height: 100vh;
+	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -438,6 +439,7 @@ ul{
 		background-color: #333c4c;
 		line-height: 60px;
 		padding: 0 15px;
+
 		color: #96a2b0;
 
 		font-size: 18px;
@@ -445,6 +447,15 @@ ul{
 		border: none;
 		width: 100%;
 
+	}
+	input[type="password"]{
+		padding-right: 45px;
+	}
+	.pass_look{
+		position: absolute;
+		right: 15px;
+		top: 23px;
+		font-size: 14px;
 	}
 }
 .input_checkbox_wr{
@@ -498,6 +509,64 @@ ul{
 		background-color: #8f9aa8;
 		color: #fff;
 	}
+}
+
+.user_name{
+	width: 100%;
+	border-bottom: 1px solid #333c4c;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 15px;
+	> span{
+		font-size: 36px;
+		font-weight: 200;
+		color: #fff;
+		width: auto;
+		margin-right: 80px;
+		margin-bottom: 0;
+		i {
+
+			background-image: url(../img/svg/icon-12.svg);
+			width: 41px;
+			height: 41px;
+			margin-right: 10px;
+			-webkit-background-size: 30px 30px;
+			background-size: 41px;
+			display: inline-block;
+			background-repeat: no-repeat;
+			top: 8px;
+			position: relative;
+		}
+	}
+	a{
+		font-size: 18px;
+		color: #96a1b0;
+		font-weight: 300;
+		&:hover{
+			color: #fff;
+			span:before{
+				color: #fff;
+			}
+		}
+		i{
+			border-bottom: 1px solid #96a1b0;
+			font-style: normal;
+		}
+		span{
+			font-size: 26px;
+			margin-right: 10px;
+			position: relative;
+			top: 6px
+		}
+
+	}
+}
+
+.user_form{
+	max-width: 390px;
+	margin-top: 70px;
 }
 
 @import "menu";

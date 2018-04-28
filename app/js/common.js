@@ -55,12 +55,12 @@
             $(".input").toggleClass("square");
             $("#content").toggleClass("active");
             if ($('.search').hasClass('close')) {
-                $('input').focus();
+                $('#content input').focus();
             } else {
-                $('input').blur();
+                $('#content input').blur();
             }
         }
-        $('button').on('click', expand);
+        $('#content button').on('click', expand);
 
 
 
