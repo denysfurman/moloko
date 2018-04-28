@@ -16,6 +16,14 @@
     padding-left: 366px;
     padding-right: 20px;
   }
+  .farm_item_title {
+
+    width: 350px;
+  }
+  .farm_item_inform {
+
+    width: calc(100% - 350px);
+  }
 }
 @media only screen and (max-width: 1350px) {
   .chart_wr .canvas_wr {
@@ -199,6 +207,20 @@
 
     margin-bottom: 0!important;
   }
+  .farm_item_title {
+
+    width: 100%;
+  }
+  .farm_item_title a.add {
+    font-weight: 300;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .farm_item_inform {
+
+    width: 100%;
+  }
 
 
 
@@ -222,6 +244,13 @@
     font-weight: 200;
     line-height: 20px;
     color: #96a1b0;
+  }
+  .farm_item {
+
+    padding: 20px 0;
+    &:hover{
+      background-color: transparent;
+    }
   }
   #content .square {
 
@@ -285,6 +314,13 @@
     margin-bottom: 40px;
 
   }
+  .main_content_descr h1.farm_title {
+    color: #333c4c;
+    font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 53px;
+  }
 
 
   .login_page {
@@ -328,7 +364,18 @@
 
     font-size: 22px;
   }
+  .farm_item_title a.name {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+  }
+  .farm_item_inform ul li {
+
+    font-size: 16px;
+  }
+
 }
+
 @media only screen and (max-width: 359px) {
 
 }

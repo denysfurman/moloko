@@ -166,7 +166,7 @@ ul{
 		box-sizing: border-box;
 		width: 30px;
 		height: 30px;
-		border: 1px solid #525762;
+		border: 2px solid #525762;
 		border-radius: 50%;
 		background: none;
 		color: #fff;
@@ -298,6 +298,15 @@ ul{
 		margin-top: 0;
 		margin-bottom: 45px;
 		line-height: 22px;
+
+		&.farm_title{
+			color: #333c4c;
+			font-weight: 200;
+			font-size: 72px;
+			margin-bottom: 80px;
+			line-height: 50px;
+
+		}
 	}
 }
 .chart_wr{
@@ -567,7 +576,103 @@ ul{
 .user_form{
 	max-width: 390px;
 	margin-top: 70px;
+	margin-bottom: 50px;
 }
+
+.farm_item{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	border-top: 1px solid #333c4c;
+	padding: 40px 20px;
+	&:hover{
+		background-color: #333c4c;
+
+		a.add {
+			display: block!important;
+		}
+
+	}
+	&:last-child{
+		border-bottom: 1px solid #333c4c;
+	}
+	&_title{
+		display: flex;
+		flex-direction: column;
+		width: 450px;
+		align-items: flex-start;
+		span{
+			color: #424b5a;
+
+			font-size: 16px;
+			font-weight: 300;
+			margin-bottom: 5px;
+			display: block;
+		}
+		a.name{
+			font-size: 30px;
+			font-weight: 200;
+			line-height: 30px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+			margin-bottom: 30px;
+			&:hover{
+				color: #fff;
+			}
+		}
+		a.add{
+			font-weight: 300;
+			color: #fff;
+			display: none;
+			i{
+				margin-right: 5px;
+				position: relative;
+				top: 1px;
+				&:before{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+.jq-checkbox.checked .jq-checkbox__div {
+
+	background-image: url("../img/checked.svg");
+}
+.farm_item_inform{
+	width: calc(100% - 450px);
+	ul{
+		li{
+			color: #96a2b0;
+			font-family: Roboto;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 22px;
+			margin-bottom: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			span{
+				width: 86px;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.farm_item_inform ul li{
+	padding-left: 80px;
+	position: relative;
+}
+.farm_item_inform ul li span {
+	width: 80px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+
+
 
 @import "menu";
 @import "media"; // Always at the end
