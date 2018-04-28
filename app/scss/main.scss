@@ -3,7 +3,7 @@
 @import "libs";
 
 ::placeholder {
-	color: #666;
+	color: #96a2b0;
 }
 
 ::selection {
@@ -68,6 +68,7 @@ a {
 
 button{
 	outline: none!important;
+	transition: all 0.3s ease;
 }
 .text-center {
 	text-align: center;
@@ -385,5 +386,119 @@ ul{
 		}
 	}
 }
+
+.login_page{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: relative;
+	form{
+		padding: 0 15px;
+		max-width: 420px;
+		width: 100%;
+	}
+	h1{
+		color: #96a1b0;
+		font-family: Roboto;
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 30px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	.login_bottom_logo{
+		position: absolute;
+		width: 90px;
+		bottom: -9px;
+	}
+	.login_top_logo{
+		position: absolute;
+
+		width: 75px;
+		top: 45px;
+		a{
+			width: 100%;
+		}
+
+	}
+
+}
+
+.input_wr{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+	input{
+		height: 60px;
+		border-radius: 3px;
+		background-color: #333c4c;
+		line-height: 60px;
+		padding: 0 15px;
+		color: #96a2b0;
+
+		font-size: 18px;
+		font-weight: 300;
+		border: none;
+		width: 100%;
+
+	}
+}
+.input_checkbox_wr{
+  	width: 100%;
+	padding: 10px 15px;
+	border-radius: 3px;
+	background-color: #222835;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	label{
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+	a{
+		color: #96a2b0;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 300;
+		height: 23px;
+		border-bottom: 1px solid rgba(150, 162, 176, 0.54);
+		position: relative;
+		top: -2px;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+.button{
+	color: #272d3b;
+	font-family: Roboto;
+	font-size: 30px;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 5px 20px rgba(12, 15, 22, 0.4);
+	border-radius: 3px;
+	background-color: #ffffff;
+
+	margin-top: 30px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	&:hover{
+		background-color: #8f9aa8;
+		color: #fff;
+	}
+}
+
 @import "menu";
 @import "media"; // Always at the end

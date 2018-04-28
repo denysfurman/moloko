@@ -259,4 +259,32 @@
     width: calc(100% - 86px);
     float: left;
   }
+
+  .login_page .login_top_logo {
+    position: relative;
+    width: 55px;
+    top: inherit;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+  }
+
+
+  .login_page {
+
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 90px;
+  }
+  .input_checkbox_wr {
+
+    font-size: 13px;
+    a{
+      font-size: 13px;
+      height: 19px;
+      border-bottom: 1px solid rgba(150,162,176,.54);
+      position: relative;
+      top: -1px;
+    }
+  }
 }

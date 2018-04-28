@@ -28,6 +28,11 @@
             }
         });
 
+        //form
+        $('.form_style').styler({
+            selectSearch: true
+        });
+
 
         //tabs
         $('.tabgroup > div').hide();
