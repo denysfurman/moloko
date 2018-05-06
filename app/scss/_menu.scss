@@ -97,8 +97,11 @@
   }
   &.is-clicked {
     width: 17px;
-    transform: rotateZ(180deg);
-    transition: transform 1s ease-in-out;
+
+
+
+
+
     i {
       display: none;
     }
@@ -139,7 +142,7 @@
   top: 0;
 
   visibility: visible;
-  z-index: 12;
+  z-index: 9;
 
   transform: translateX(0);
   transition: transform 1s ease-in-out;

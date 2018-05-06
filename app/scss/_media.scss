@@ -7,13 +7,11 @@
   .chart_wr .canvas_wr {
     width: 636px;
   }
-  .chart_wr .canvas_wr canvas {
-    width: 580px!important;
-  }
+
 
   .main_content {
     width: 100%;
-    padding-left: 366px;
+    padding-left: 386px;
     padding-right: 20px;
   }
   .farm_item_title {
@@ -29,9 +27,7 @@
   .chart_wr .canvas_wr {
     width: 436px;
   }
-  .chart_wr .canvas_wr canvas {
-    width: 380px!important;
-  }
+
 
   .main_content {
     width: 100%;
@@ -107,10 +103,7 @@
     width: 100%;
     padding: 15px;
   }
-  .chart_wr .canvas_wr canvas {
-    width: 100%!important;
-    height: 200px!important;
-  }
+
   #content .search:before {
     width: 10px;
     height: 2px;
@@ -125,6 +118,12 @@
     margin-left: 4px;
 
   }
+  .control {
+    position: relative;
+    z-index: 100;
+    display: inline-block;
+    float: right;
+  }
   #content .search.close:before {
     width: 27px;
     height: 1px;
@@ -132,21 +131,26 @@
     margin-left: -13px;
 
   }
+
+  .search-input {
+
+    z-index: 101;
+  }
   .logo_mob {
     display: block;
     position: relative;
-    width: 76px;
+    width: 34px;
     margin-top: 15px;
-    margin-left: 13px;
+    margin-left: 22px;
     float: left;
-   
+    margin-bottom: 20px;
   }
 
   .main_content_descr span {
 
     top: 0;
     font-weight: 300;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   body.shadow:before {
 
@@ -171,16 +175,18 @@
       margin-right: 0;
     }
   }
-  .tabs {
+  //.tabs {
+  //
+  //  display: flex;
+  //  overflow-x: auto;
+  //}
+  //.tabs li {
+  //
+  //  margin-bottom: 15px;
+  //  margin-right: 34px;
+  //}
 
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .tabs li {
-    float: left;
-    margin-bottom: 15px;
-    margin-right: 34px;
-  }
+
   #content .square {
 
     transform: translate(-7%,-50%);
@@ -206,6 +212,7 @@
 
 
     margin-bottom: 0!important;
+    margin-top: 15px;
   }
   .farm_item_title {
 
@@ -221,6 +228,60 @@
 
     width: 100%;
   }
+  .flex_wr {
+
+    flex-direction: column;
+  }
+  .chart_inform p i {
+    min-width: auto;
+    display: inline-block;
+    font-style: normal;
+    margin-right: 12px;
+  }
+  .control .btn-material {
+    position: absolute;
+    top: -3px;
+    width: 50px;
+    height: 50px;
+    right: 60px;
+  }
+  .control .icon-material-search {
+    color: #fff;
+    position: absolute;
+    top: 9px;
+    right: 70px;
+  }
+  .icon-close img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+  .icon-close {
+
+    top: 26px;
+    right: 81px;
+    width: 30px;
+    display: none;
+    height: 30px;
+  }
+  .main_content_descr h1.farm_title {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 53px;
+    margin-bottom: 38px;
+    line-height: 21px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 41px;
+  }
+  body.search-active {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+  }
+
 
 
 
@@ -305,6 +366,12 @@
     width: calc(100% - 86px);
     float: left;
   }
+  .tabs li {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    top: 1px;
+  }
 
   .login_page .login_top_logo {
     position: relative;
@@ -373,9 +440,55 @@
 
     font-size: 16px;
   }
+  .jq-checkbox.checked .jq-checkbox__div {
+    -webkit-background-size: contain;
+    background-size: 12px;
+    margin: 0;
+  }
+  .search-input {
+    height: 80px;
+    position: absolute;
+    top: 102px;
+    left: 15px;
+    margin-top: 0;
+
+
+    width: calc(100% - 30px);
+
+  }
+  .search-input input {
+    color: #fff;
+    font-size: 25px;
+
+    line-height: 86px;
+  }
+  .control {
+
+    position: relative;
+    left: 17px;
+  }
+  .icon-close {
+
+    top: 15px;
+    right: 15px;
+
+  }
+  .shadow #cd-menu-trigger {
+
+    position: fixed;
+    right: 25px;
+  }
+  .chart_inform p span {
+    font-size: 32px;
+
+  }
+  .chart_inform p i {
+
+    margin-top: 1px;
+  }
 
 }
 
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 400px) {
 
 }

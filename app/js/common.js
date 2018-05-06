@@ -21,6 +21,7 @@
             $('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
             $('body').toggleClass('shadow');
             $('.cd-navigation li').toggleClass('inner');
+            $('body').removeClass('search-active');
 
             //check if transitions are not supported - i.e. in IE9
             if($('html').hasClass('no-csstransitions')) {
@@ -49,18 +50,17 @@
             $(target).show();
 
         })
-        //search
-        function expand() {
-            $(".search").toggleClass("close");
-            $(".input").toggleClass("square");
-            $("#content").toggleClass("active");
-            if ($('.search').hasClass('close')) {
-                $('#content input').focus();
-            } else {
-                $('#content input').blur();
-            }
-        }
-        $('#content button').on('click', expand);
+//serch
+        $('.control , .icon-material-search , icon-material-search img , .btn-material').click( function(){
+            $('body').addClass('search-active');
+            $('.input-search').focus();
+            $('.icon-close').fadeIn();
+        });
+
+        $('.icon-close').click( function(){
+            $('body').removeClass('search-active');
+            $('.icon-close').fadeOut();
+        });
 
 
 

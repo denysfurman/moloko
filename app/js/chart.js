@@ -1,72 +1,169 @@
-//chart
-$( document ).ready(function() {
- Chart.defaults.global.animationSteps = 100;
+var canvas = document.getElementById("myFirstChart");
+var ctx = canvas.getContext('2d');
 
- Chart.defaults.global.tooltipYPadding = 10;
- Chart.defaults.global.tooltipCornerRadius = 3;
-
- Chart.defaults.global.tooltipTitleFontColor = "#FFFFFF";
- Chart.defaults.global.tooltipFillColor = "#000";
- Chart.defaults.global.animationEasing = "easeOutBounce";
- Chart.defaults.global.responsive = true;
- Chart.defaults.global.scaleLineColor = "#333c4c";
- Chart.defaults.global.scaleFontSize = 16;
-
-    var lineChartData = {
-         labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
-
-         datasets: [{
-             fillColor: "transparent",
-             strokeColor: "#4c5a6c",
-             pointColor:"#4c5a6c",
-             fontColor: "#ffffff",
-             data: [2, 4, 1, 8,4,6]
-         }]
-     }
+// Global Options:
 
 
 
-     var ctx = document.getElementById("canvas").getContext("2d");
+Chart.defaults.global.animationEasing = "easeOutBounce";
+Chart.defaults.global.responsive = true;
+Chart.defaults.global.scaleLineColor = "#96a1b0";
+Chart.defaults.global.defaultFontSize = 14;
+Chart.defaults.global.defaultFontColor = "#96a1b0"
+Chart.defaults.line.spanGaps = true;
 
-     var LineChartDemo = new Chart(ctx).Line(lineChartData, {
-         pointDotRadius: 3,
-         bezierCurve: false,
-         scaleShowVerticalLines: false,
-         scaleGridLineColor: "#333c4c"
-     });
+// Data with datasets options
+var data = {
+    labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
+    datasets: [
+        {
 
+            fill: false,
 
-    var lineChartData2 = {
-        labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
-        options: {
-            legend: {
-                labels: {
-                    // This more specific font property overrides the global property
-                    fontColor: '#fff'
-                }
-            }
-        },
-
-        datasets: [{
+            borderColor: "#96a1b0",
             fillColor: "transparent",
-            strokeColor: "#4c5a6c",
+            strokeColor: "#96a1b0",
             pointColor:"#4c5a6c",
-            fontColor: "white",
-            data: [ 2.55,2.70, 2.50,2.85, 2.50,2.80]
-        }]
+            bezierCurve: false,
+
+            scaleShowVerticalLines: false,
+            data: [2, 4, 1, 8,4,6]
+        }
+    ]
+};
+var data2 = {
+    labels: ["19 мар", "26 мар", "02 апр", "09 апр", "16 апр", "23 апр"],
+    datasets: [
+        {
+
+            fill: false,
+
+            borderColor: "#96a1b0",
+            fillColor: "transparent",
+            strokeColor: "#96a1b0",
+            pointColor:"#4c5a6c",
+            bezierCurve: false,
+
+            scaleShowVerticalLines: false,
+            data: [4, 8, 1, 8,4,1]
+        }
+    ]
+};
+var myFirstChart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+
+
+    options: {
+        responsive: true,
+        title: false,
+        scales: {
+            yAxes: [{
+                stacked: false,
+                gridLines: {
+                    display: true,
+                    color: "#333c4c"
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
+                }
+            }]
+        },
+        legend: {
+            display: false
+
+        },
+        elements: {
+            line: {
+                tension: 0 // disables bezier curves
+            }
+        }
+
+
+
+
     }
+})
 
-    var ctx2 = document.getElementById("myLine").getContext("2d");
 
-    var LineChartDemo2 = new Chart(ctx2).Line(lineChartData2, {
-        pointDotRadius: 3,
-        bezierCurve: false,
-        scaleShowVerticalLines: false,
-        scaleGridLineColor: "#333c4c"
-    });
+var canvas2 = document.getElementById("myFirstChart2");
+var ctx2 = canvas2.getContext('2d');
+var myFirstChart2 = new Chart(ctx2, {
+    type: 'line',
+    data: data2,
+
+
+    options: {
+        responsive: true,
+        title: false,
+        scales: {
+            yAxes: [{
+                stacked: false,
+                gridLines: {
+                    display: true,
+                    color: "#333c4c"
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
+                }
+            }]
+        },
+        legend: {
+            display: false
+
+        },
+        elements: {
+            line: {
+                tension: 0 // disables bezier curves
+            }
+        }
+
+
+
+
+    }
 });
+var canvas3 = document.getElementById("myFirstChart3");
+var ctx3 = canvas3.getContext('2d');
+var myFirstChart2 = new Chart(ctx3, {
+    type: 'line',
+    data: data2,
+
+
+    options: {
+        responsive: true,
+        title: false,
+        scales: {
+            yAxes: [{
+                stacked: false,
+                gridLines: {
+                    display: true,
+                    color: "#333c4c"
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
+                }
+            }]
+        },
+        legend: {
+            display: false
+
+        },
+        elements: {
+            line: {
+                tension: 0 // disables bezier curves
+            }
+        }
 
 
 
 
+    }
+});
 

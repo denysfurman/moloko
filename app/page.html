@@ -30,7 +30,7 @@
 
 <a id="cd-menu-trigger" href="#0"><span class="cd-menu-icon"></span></a>
 <a href="#" class="logo_mob">
-    <img src="img/svg/icon-15.svg" alt="">
+    <img src="img/svg/icon-02.svg" alt="">
 </a>
 <div class="main_sitebar" id="cd-lateral-nav">
     <a href="#" class="logo">
@@ -47,7 +47,7 @@
         <div class="main_menu_mob_wr">
             <ul class="cd-navigation">
                 <li><a href="#" class="active"><i class="icon-icon-09"></i><span>Все фермы</span></a></li>
-                <li><a href="#"><i class="icon-icon-07"></i><span> с. Архангельское</span></a></li>
+                <li><a href="#"><i class="icon-icon-07"></i><span>с. Архангельское</span></a></li>
                 <li><a href="#"><i class="icon-icon-07"></i><span>с. Новомарковка</span></a></li>
                 <li><a href="#"><i class="icon-icon-07"></i><span>с. Николаевка</span></a></li>
                 <li><a href="#"><i class="icon-icon-08"></i><span>Избранное</span></a></li>
@@ -67,10 +67,18 @@
 </div>
 <div class="main_content">
     <div class="main_content_wr">
-        <form id="content">
-            <input type="text" name="input" class="input">
-            <button type="reset" class="search"></button>
-        </form>
+        <div class='control'>
+            <div class='btn-material'></div>
+            <i class='material-icons icon-material-search'><img src="../img/svg/icon-19.svg" alt=""></i>
+        </div>
+        <i class='icon-close material-icons'><img src="../img/cancel.svg" alt=""></i>
+        <div class='search-input'>
+            <input class='input-search' placeholder='Поиск' type='text'>
+        </div>
+
+        <br>
+        <br>
+        <br>
 
         <div class="main_content_descr">
             <h1> Список страниц</h1>
@@ -88,6 +96,9 @@
             </li>
             <li>
                 <a target="_blank" href="ferm.html">Мои фермы</a>
+            </li>
+            <li>
+                <a target="_blank" href="pass.html">Востановить пароль</a>
             </li>
         </ul>
 
@@ -107,7 +118,7 @@
     <script src="js/common.js"></script>
     
     <!--Подключить только на страницах з графиками-->
-    <script src='js/chart.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js'></script>
     <script src="js/chart.js"></script>
     
     

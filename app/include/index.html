@@ -1,13 +1,20 @@
 
 //= components/head.html
 
-    //= components/sitebar.html
+//= components/sitebar.html
+
+
+
 <div class="main_content">
     <div class="main_content_wr">
-        <form id="content">
-            <input type="text" name="input" class="input">
-            <button type="reset" class="search"></button>
-        </form>
+      <div class='control'>
+          <div class='btn-material'></div>
+          <i class='material-icons icon-material-search'><img src="../img/svg/icon-19.svg" alt=""></i>
+      </div>
+        <i class='icon-close material-icons'><img src="../img/cancel.svg" alt=""></i>
+        <div class='search-input'>
+            <input class='input-search' placeholder='Поиск' type='text'>
+        </div>
 
         <div class="main_content_descr">
             <span>Молочная ферма</span>
@@ -18,43 +25,69 @@
 
 
 
+        <div class="tabs_wr">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                <li><a href="#tab1" class="active">Доильный аппарат </a></li>
+                <li><a href="#tab2">Посещение </a></li>
+                <li><a href="#tab3">Кормление</a></li>
+                <li><a href="#tab4">Молоко</a></li>
+                <li><a href="#tab5">Репродукция</a></li>
 
-        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-            <li><a href="#tab1" class="active">Доильный аппарат </a></li>
-            <li><a href="#tab2">Посещение </a></li>
-            <li><a href="#tab3">Кормление</a></li>
-            <li><a href="#tab4">Молоко</a></li>
-            <li><a href="#tab5">Репродукция</a></li>
+            </ul>
+        </div>
 
-        </ul>
         <section id="first-tab-group" class="tabgroup">
             <div id="tab1">
 
+
                 <div class="chart_wr">
                     <span class="chart_title">Сбои/доильный аппарат</span>
-                    <div class="canvas_wr">
-                        <canvas id="canvas"></canvas>
-                    </div>
-                    <div class="chart_inform">
-                        <p> <i>Вчера</i>  <span>3.0</span></p>
-                        <p> <i>Неделя</i>  <span>2.99</span></p>
+                    <div class="flex_wr">
+                        <div class="canvas_wr">
+                            <canvas id="myFirstChart2" height="29vh" width="100vw" ></canvas>
+                        </div>
+                        <div class="chart_inform">
+                            <p> <i>Вчера</i>  <span>3.0</span></p>
+                            <p> <i>Неделя</i>  <span>2.99</span></p>
+                        </div>
                     </div>
 
 
                 </div>
+
 
                 <div class="chart_wr">
                     <span class="chart_title">Скорость доения</span>
-                    <div class="canvas_wr">
-                        <canvas id="myLine"></canvas>
+                    <div class="flex_wr">
+                        <div class="canvas_wr">
+                            <canvas id="myFirstChart" height="29vh" width="100vw" ></canvas>
+                        </div>
+
+                        <div class="chart_inform">
+                            <p> <i>Вчера</i>  <span>3.0</span></p>
+                            <p> <i>Неделя</i>  <span>3.0</span></p>
+
+                        </div>
                     </div>
 
-                    <div class="chart_inform">
-                        <p> <i>Вчера</i>  <span>3.0</span></p>
-                        <p> <i>Неделя</i>  <span>3.0</span></p>
-                        <p> <i>2 Недели</i>  <span>3.0</span></p>
-                    </div>
                 </div>
+
+                <div class="chart_wr">
+                    <span class="chart_title">Сбои/доильный аппарат</span>
+                    <div class="flex_wr">
+                        <div class="canvas_wr">
+                            <canvas id="myFirstChart3" height="29vh" width="100vw" ></canvas>
+                        </div>
+                        <div class="chart_inform">
+                            <p> <i>Вчера</i>  <span>3.0</span></p>
+                            <p> <i>Неделя</i>  <span>2.99</span></p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
 
             </div>
 
