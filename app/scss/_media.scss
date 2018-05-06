@@ -490,5 +490,19 @@
 }
 
 @media only screen and (max-width: 400px) {
-
+  .chart_wr .canvas_wr {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #cd-lateral-nav {
+    width: 263px;
+  }
+  #cd-lateral-nav .main_menu_mob_wr a {
+    color: #96a1b0;
+    font-family: Roboto;
+    font-size: 16px;
+  }
 }
