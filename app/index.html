@@ -23,7 +23,9 @@
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css'>
     <link rel="stylesheet" href="css/main.min.css">
+
 
 </head>
 <body>
@@ -88,6 +90,8 @@
 
 
 
+
+
         <div class="tabs_wr">
             <ul class="tabs clearfix" data-tabgroup="first-tab-group">
                 <li><a href="#tab1" class="active">Доильный аппарат </a></li>
@@ -101,6 +105,23 @@
 
         <section id="first-tab-group" class="tabgroup">
             <div id="tab1">
+
+                <div class="message"></div>
+
+
+                <div class="form filter">
+                    <span>c</span>
+                    <div class="input_wr">
+                        <input class="form-control" type="text" placeholder="_ _ /_ _ /_ _ " id="from">
+                    </div>
+                    <span>по</span>
+                    <div class="input_wr">
+                        <input class="form-control" type="text" placeholder="_ _ /_ _ /_ _" id="to">
+                    </div>
+
+
+                </div>
+
 
 
                 <div class="chart_wr">
@@ -187,6 +208,7 @@
 
 <!--Подключить только на страницах з графиками-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 <script src="js/chart.js"></script>
 
 

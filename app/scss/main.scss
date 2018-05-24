@@ -87,7 +87,7 @@ ul{
 .main_content{
 	width: 100%;
 	padding-left: 400px;
-	padding-top: 40px;
+	padding-top: 55px;
 	padding-right: 70px;
 
 }
@@ -882,6 +882,53 @@ body {
 farm_item:last-child{
 	margin-bottom: 100px;
 }
+
+.shadow{
+	.control{
+		opacity: 0;
+	}
+}
+
+.user_name a {
+
+	margin-top: -1px;
+}
+
+.form.filter {
+
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: left;
+	align-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	.input_wr{
+		width: 200px;
+		display: inline-flex;
+
+	}
+	span{
+		margin: 0 20px;
+	}
+
+
+
+}
+.ui-widget-header {
+	border: 1px solid #272d3b;
+	background: #333c4c;
+}
+
+
+
+	@media screen and (min-width: 480px) {
+
+}
+
+
+
+
 
 @import "menu";
 @import "media"; // Always at the end

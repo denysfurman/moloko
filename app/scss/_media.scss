@@ -29,6 +29,7 @@
   }
 
 
+
   .main_content {
     width: 100%;
     padding-left: 366px;
@@ -52,6 +53,9 @@
     visibility: hidden;
     transform: translateX(-400px);
   }
+  .user_name a {
+    margin-top: 12px;
+  }
   .main_content {
     width: 100%;
     padding-left: 20px;
@@ -60,6 +64,10 @@
   }
   #cd-menu-trigger{
     display: block;
+  }
+  body.shadow {
+
+    width: 100%;
   }
   #cd-lateral-nav .main_menu_mob_wr .lk_link {
     margin-top: 50px;
@@ -485,6 +493,12 @@
   .chart_inform p i {
 
     margin-top: 1px;
+  }
+  .form.filter .input_wr{
+    width: 100%;
+  }
+  .form.filter{
+    flex-direction: column;
   }
 
 }
