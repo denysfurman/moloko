@@ -909,7 +909,7 @@ farm_item:last-child{
 
 	}
 	span{
-		margin: 0 20px;
+		margin: 0 21px;
 	}
 
 
@@ -920,13 +920,16 @@ farm_item:last-child{
 	background: #333c4c;
 }
 
+.input_wr input.error {
 
-
-	@media screen and (min-width: 480px) {
-
+	border: 1px solid #fd2222;
 }
 
 
+
+.farm_item_title a.add.active{
+	display: block;
+}
 
 
 
